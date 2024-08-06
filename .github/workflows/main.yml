@@ -7,9 +7,9 @@ jobs:
   job1:
     runs-on: ubuntu-latest
     steps:
-      - name: Job 1
-        run: echo "Job 1 is executed successfully"
-
+      - name: display file content
+        run: |
+          cat test.txt
   job2:
     runs-on: ubuntu-latest
     #needs: job1 #for dependent jobs
